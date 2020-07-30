@@ -48,6 +48,11 @@
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .team-list > .item .team-image {
@@ -81,6 +86,7 @@
 
 .soc-list {
   display: flex;
+  padding-bottom: 24px;
   align-items: center;
   justify-content: center;
 }

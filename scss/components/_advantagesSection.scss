@@ -2,7 +2,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    margin: -10px;
+    margin: -15px;
   }
 }
 
@@ -79,6 +79,6 @@
 .work-list .item {
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
-    margin: 10px;
+    margin: 15px;
   }
 }
