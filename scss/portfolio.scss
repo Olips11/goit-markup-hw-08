@@ -1,0 +1,18 @@
+// Utils
+@import './utils/variables';
+@import './utils/mixin';
+
+// Base style
+@import './utils/base';
+@import './utils/placeholder';
+
+// Header Logo
+@import './components/pageHeade';
+@import './components/logo';
+
+// sections
+@import './components/filtersection';
+@import './components/projectssection';
+
+// Footer
+@import './components/footer';
