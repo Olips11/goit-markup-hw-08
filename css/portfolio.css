@@ -412,6 +412,10 @@ p {
 .footer-container {
   padding-bottom: 60px;
   padding-top: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
@@ -419,8 +423,40 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 60px;
   }
+}
+
+.block-address {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .block-address {
+    padding-left: 60px;
+  }
+}
+
+.address-soc {
+  text-align: center;
+}
+
+.block-soc {
+  text-align: center;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .block-soc {
+    padding-left: 195px;
+  }
+}
+
+.footer-address {
+  margin-top: 0em;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .logo-title {
@@ -433,38 +469,16 @@ p {
   text-align: center;
 }
 
-.address {
-  margin-top: 20px;
-}
-
-.footer-address {
-  margin-top: 0em;
-  margin-bottom: 8px;
+.footer-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
   color: #ffffff;
+  font-family: Roboto;
+  font-weight: bold;
   font-size: 14px;
-  line-height: 1.71;
-}
-
-.block-address {
-  display: block;
+  line-height: 1.14;
+  text-transform: uppercase;
   text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .block-address {
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .block-address {
-    padding-left: 60px;
-  }
-}
-
-.mail {
-  margin-top: 0em;
-  margin-bottom: 8px;
 }
 
 .footer-mail-tel {
@@ -474,15 +488,9 @@ p {
   text-decoration: none;
 }
 
-.block-soc {
-  display: block;
-  padding-right: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .block-soc {
-    padding-left: 195px;
-  }
+.address {
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .footer-soc-list {
@@ -492,6 +500,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 
 .footer-soc-list .list-iteam {
@@ -521,24 +530,18 @@ p {
   margin-right: 10px;
 }
 
-.footer-title {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  color: #ffffff;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .block-mailing {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   padding-left: auto;
   padding-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .block-mailing {
+    margin-top: 60px;
+  }
 }
 
 .input-mailing {

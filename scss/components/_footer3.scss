@@ -7,44 +7,13 @@
 .footer-container {
   padding-bottom: 60px;
   padding-top: 60px;
-  flex-direction: column;
 }
 
 .address-soc {
   @media screen and (min-width: 768px) {
     display: flex;
+    padding-bottom: 60px;
   }
-}
-
-.block-address {
-  text-align: center;
-
-  @media screen and (min-width: 768px) {
-    padding-left: 60px;
-  }
-}
-
-.address-soc {
-  text-align: center;
-}
-
-.block-soc {
-  text-align: center;
-  display: inline-block;
-
-  @media screen and (min-width: 768px) {
-    padding-left: 195px;
-  }
-}
-
-.footer-address {
-  margin-top: 0em;
-  margin-bottom: 8px;
-
-  color: #ffffff;
-
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 .logo-title {
@@ -58,17 +27,36 @@
   text-align: center;
 }
 
-.footer-title {
-  margin-top: 0px;
-  margin-bottom: 20px;
+.address {
+  margin-top: 20px;
+}
+
+.footer-address {
+  margin-top: 0em;
+  margin-bottom: 8px;
+
   color: #ffffff;
 
-  font-family: Roboto;
-  font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+  line-height: 1.71;
+}
+
+.block-address {
+  display: block;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+  }
+}
+
+.mail {
+  margin-top: 0em;
+  margin-bottom: 8px;
 }
 
 .footer-mail-tel {
@@ -79,15 +67,18 @@
   text-decoration: none;
 }
 
-.address {
-  margin-top: 20px;
-  margin-bottom: 60px;
+.block-soc {
+  display: block;
+  padding-right: 0;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 195px;
+  }
 }
 
 .footer-soc-list {
   display: flex;
   align-items: center;
-  margin-top: 20px;
 
   & .list-iteam {
     display: flex;
@@ -115,14 +106,23 @@
   margin-right: 10px;
 }
 
+.footer-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #ffffff;
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .block-mailing {
   align-items: flex-end;
   padding-left: auto;
   padding-right: auto;
-
-  @media screen and (max-width: 767px) {
-    margin-top: 60px;
-  }
 }
 
 .input-mailing {
