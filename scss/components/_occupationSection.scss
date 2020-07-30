@@ -1,6 +1,12 @@
 /* section-occupation род занятий */
 
 .section-occupation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.section-occupation {
   padding-bottom: 94px;
 }
 

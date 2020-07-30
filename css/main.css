@@ -305,4 +305,194 @@ p {
   color: #2196f3;
   background-color: #ffffff;
 }
+
+@media screen and (min-width: 768px) {
+  .work-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -10px;
+  }
+}
+
+.work-list .item::before {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  content: '';
+  background: #f5f4fa;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item.icon-antenna::before {
+  background-image: url(../img/Section1/antenna/antenna.svg);
+}
+
+.item.icon-clock::before {
+  background-image: url(../img/Section1/clock/clock.svg);
+}
+
+.item.icon-diagram::before {
+  background-image: url(../img/Section1/diagram/diagram.svg);
+}
+
+.item.icon-astronaut::before {
+  background-image: url(../img/Section1/astronaut/astronaut.svg);
+}
+
+@media screen and (max-width: 1199px) {
+  .section-work {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section-work-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #212121;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section-work-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+@media screen and (min-width: 768px) {
+  .work-list .item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 10px;
+  }
+}
+
+/* section-occupation род занятий */
+@media screen and (max-width: 1199px) {
+  .section-occupation {
+    display: none;
+  }
+}
+
+.section-occupation {
+  padding-bottom: 94px;
+}
+
+.occupation-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.occupation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.occupation-list .item {
+  position: relative;
+  width: 370px;
+}
+
+.occupation-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-occupation-title {
+  position: absolute;
+  bottom: 0px;
+  margin: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  height: 70px;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-team {
+  background: #f5f4fa;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.team-title {
+  margin-top: 0;
+  color: #212121;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .team-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 1199px) {
+  .team-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list > .item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+.card {
+  width: 354px;
+  height: 260px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list > .item .team-image {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
