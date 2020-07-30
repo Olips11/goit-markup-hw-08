@@ -25,7 +25,9 @@
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
+  // justify-content: space-between;
 
   @media screen and (min-width: 1199px) {
     & .item:not(:last-child) {
@@ -35,22 +37,85 @@
 }
 
 .team-list > .item {
+  width: 100%;
+
+  background: $primary-background-color;
+  box-shadow: $main-shadow;
+
+  border-radius: 0px 0px 4px 4px;
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 }
 
-.card {
-  width: 354px;
-  height: 260px;
-
-  background: $primary-background-color;
-  box-shadow: $main-shadow;
-
-  border-radius: 0px 0px 4px 4px;
-}
-
 .team-list > .item .team-image {
   width: 100%;
+}
+
+.section-team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-team-text {
+  margin-top: 0px;
+  margin-bottom: 16px;
+
+  color: $primary-text-color;
+
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  padding-left: 0px;
+
+  .soc-list & {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+
+    transition: background-color $duration $timihg-function;
+
+    & .items:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.soc-icon {
+  background-size: 20px;
+  fill: #afb1b8;
+
+  transition: fill $duration $timihg-function;
+}
+
+.soc-list .social-icon:hover,
+.soc-list .social-icon:focus {
+  background-color: #2196f3;
+}
+
+.soc-list .social-icon:hover .soc-icon {
+  fill: #ffffff;
 }
