@@ -16,17 +16,17 @@
 }
 
 .site-nav {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    margin-left: 85px;
-  }
-  & .item:not(:last-child) {
-    margin-right: 50px;
-  }
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-grow: 1;
-    justify-content: space-between;
+    // justify-content: space-between;
+    margin-left: 81px;
+  }
+
+  & .item:not(:last-child) {
+    @media screen and (min-width: $tablet) {
+      margin-right: 50px;
+    }
   }
 }
 
@@ -69,51 +69,49 @@
   }
 }
 
-// .address-nav {
-//   @media screen and (max-width: 767px) {
-//     margin-top: 60px;
-
-//     .item + .item {
-//       margin-top: 16px;
-//     }
-//   }
-
-//   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-//     font-size: 12px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-
-//     .item + .item {
-//       margin-top: 10px;
-//     }
-//   }
-// }
 .address-nav {
   margin-left: auto;
   font-style: normal;
   align-items: center;
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    .address-nav .item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .address-nav .item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
 }
 
 .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: #757575;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
   letter-spacing: 0.02em;
+
+  color: #757575;
   text-decoration: none;
   align-items: center;
 
   transition: color $duration $timihg-function;
+
+  @media screen and (max-width: 1199px) {
+    line-height: 14px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1199px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+  }
 }
 
 .address-nav .link:hover,
@@ -122,9 +120,9 @@
 }
 
 .mail-icon-address {
-  width: 15px;
-  height: 12px;
-  margin-right: 10px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
   fill: currentColor;
 
   transition: fill $duration $timihg-function;
@@ -137,8 +135,8 @@
 
 .tel-icon-address {
   width: 10px;
-  height: 14.94px;
-  margin-right: 10px;
+  height: 14px;
+  margin-right: 8px;
   fill: currentColor;
 
   transition: fill $duration $timihg-function;
@@ -147,16 +145,4 @@
 .address-nav .link:hover .tel-icon-address,
 .address-nav .link:focus .tel-icon-address {
   fill: #2196f3;
-}
-
-.address-nav .address-tel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.address-nav .address-mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
