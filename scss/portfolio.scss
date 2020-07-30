@@ -1,10 +1,12 @@
 // Utils
 @import './utils/variables';
 @import './utils/mixin';
+@import './utils/breakpoints';
 
 // Base style
 @import './utils/base';
 @import './utils/placeholder';
+@import './components/container';
 
 // Header Logo
 @import './components/pageHeade';
