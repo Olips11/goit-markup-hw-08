@@ -7,33 +7,51 @@
 .footer-container {
   padding-bottom: 60px;
   padding-top: 60px;
-  flex-direction: column;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-bottom: 28px;
+    padding-top: 45px;
+  }
 }
 
 .address-soc {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
 
 .block-address {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-left: 60px;
   }
 }
 
-.address-soc {
-  text-align: center;
-}
-
 .block-soc {
-  text-align: center;
-  display: inline-block;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    display: inline-block;
+  }
 
   @media screen and (min-width: 768px) {
     padding-left: 195px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-left: 80px;
+    padding-right: 94px;
   }
 }
 
@@ -61,6 +79,7 @@
 .footer-title {
   margin-top: 0px;
   margin-bottom: 20px;
+  margin-top: 11px;
   color: #ffffff;
 
   font-family: Roboto;
@@ -68,7 +87,10 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-mail-tel {
@@ -137,12 +159,40 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
+
+  @media screen and (min-width: 1200px) {
+    height: 50px;
+    width: 358px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-right: 12px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .mialing {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .button-mailing-container {

@@ -979,10 +979,31 @@ p {
 .footer-container {
   padding-bottom: 60px;
   padding-top: 60px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 28px;
+    padding-top: 45px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .address-soc {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -993,28 +1014,36 @@ p {
   }
 }
 
-.block-address {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .block-address {
+    text-align: center;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .block-address {
     padding-left: 60px;
   }
 }
 
-.address-soc {
-  text-align: center;
-}
-
-.block-soc {
-  text-align: center;
-  display: inline-block;
+@media screen and (max-width: 1199px) {
+  .block-soc {
+    text-align: center;
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .block-soc {
     padding-left: 195px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .block-soc {
+    display: block;
+    padding-left: 80px;
+    padding-right: 94px;
   }
 }
 
@@ -1039,13 +1068,19 @@ p {
 .footer-title {
   margin-top: 0px;
   margin-bottom: 20px;
+  margin-top: 11px;
   color: #ffffff;
   font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-title {
+    text-align: center;
+  }
 }
 
 .footer-mail-tel {
@@ -1127,17 +1162,51 @@ p {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 1200px) {
+  .input-mailing {
+    height: 50px;
+    width: 358px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-right: 12px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
 .mialing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .mialing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mialing {
+    padding-bottom: 94px;
+  }
 }
 
 .button-mailing-container {
