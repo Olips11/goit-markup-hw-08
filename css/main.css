@@ -10,11 +10,11 @@ img {
   display: block;
   height: auto;
   width: 100%;
-  height: 100%;
 }
 
 .list {
   list-style: none;
+  max-width: 100%;
   margin-top: 0px;
   padding: 0;
   margin: 0;
@@ -818,6 +818,18 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .team-list > .item {
   width: 100%;
   background: #ffffff;
@@ -830,12 +842,6 @@ p {
   .team-list > .item {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-list > .item .team-list:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 
