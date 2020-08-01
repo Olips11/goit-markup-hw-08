@@ -13,10 +13,22 @@
 .section-filter .list {
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
 }
 
 .button-list .item:not(:last-child) {
   margin-right: 8px;
+}
+
+.button-list .item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+    margin-right: 8px;
+  }
 }
 
 .filter-button {
