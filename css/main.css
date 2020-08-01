@@ -686,12 +686,24 @@ p {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .section-work-title {
+    text-align: center;
+  }
+}
+
 .section-work-text {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
+}
+
+@media screen and (max-width: 767px) {
+  .work-list .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -702,7 +714,7 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .work-list .item .work-list .item:not(:last-child) {
+  .work-list .item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -802,12 +814,6 @@ p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-list .item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 

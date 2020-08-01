@@ -248,7 +248,13 @@ p {
 }
 
 .section-filter {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-filter {
+    padding-top: 94px;
+  }
 }
 
 .invisible-heading {
@@ -297,8 +303,16 @@ p {
 }
 
 .section-projects {
-  padding-top: 50px;
-  padding-bottom: 94px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  margin: -15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-projects {
+    padding-top: 50px;
+    padding-bottom: 94px;
+  }
 }
 
 .projects-list {
@@ -322,18 +336,32 @@ p {
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (min-width: 768px) {
+  .projects-list .item {
+    width: 100%;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
 .projects-list .item {
   display: block;
   margin-bottom: 30px;
-  width: calc((100% - 60px) / 3);
 }
 
-.projects-list .item:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .projects-list .item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
-.projects-list .item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .projects-list .item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .projects-list .item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 .portfolio-link {

@@ -34,12 +34,6 @@
     margin: -15px;
   }
   // justify-content: space-between;
-
-  @media screen and (min-width: 1200px) {
-    & .item:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
 }
 
 .team-list > .item {
