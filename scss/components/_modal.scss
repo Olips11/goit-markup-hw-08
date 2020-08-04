@@ -7,6 +7,7 @@
   width: 100%;
   height: 100%;
   padding: 94px 15px;
+  overflow-y: scroll;
   background-color: $overlay-modal-color;
   opacity: 1;
   transition: opacity $duration $timihg-function;
