@@ -50,14 +50,11 @@ p {
 }
 
 .page-header {
-  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
 .page-header .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -71,6 +68,9 @@ p {
 @media screen and (min-width: 768px) {
   .page-header .main-nav {
     height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -79,9 +79,6 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     margin-left: 81px;
   }
 }
@@ -212,6 +209,59 @@ p {
 .address-nav .link:hover .tel-icon-address,
 .address-nav .link:focus .tel-icon-address {
   fill: #2196f3;
+}
+
+.mobile-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-button .icon-cross {
+  display: none;
+}
+
+.mobile-button.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-button.is-open .icon-menu {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 60px;
+    width: 100%;
+  }
 }
 
 .header-logo {
@@ -966,7 +1016,6 @@ p {
 
 @media screen and (max-width: 1199px) {
   .customers-list {
-    margin: -15px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1023,12 +1072,6 @@ p {
   }
 }
 
-.client-icon {
-  fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .customers-list .item a:hover,
 .customers-list .item a:focus {
   border-color: #2196f3;
@@ -1037,6 +1080,12 @@ p {
 .customers-list .item a:hover .client-icon,
 .customers-list .item a:focus .client-icon {
   fill: #2196f3;
+}
+
+.client-icon {
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-footer {
