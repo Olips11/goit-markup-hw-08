@@ -25,6 +25,7 @@
           type="button"
           class="mobile-button is-open"
           aria-expanded="false"
+          aria-controls="menu-container"
           data-menu-button
         >
           <svg
@@ -39,21 +40,22 @@
             <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
           </svg>
         </button>
-        <ul class="site-nav list">
-          <li class="item">
-            <a href="./index.html" class="header-site-nav">Студия</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="header-site-nav current"
-              >Портфолио</a
-            >
-          </li>
-          <li class="item">
-            <a href="" class="header-site-nav">Контакты</a>
-          </li>
-        </ul>
+        <div class="menu-container is-open" id="menu-container" data-menu>
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="header-site-nav">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="header-site-nav current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="item">
+              <a href="" class="header-site-nav">Контакты</a>
+            </li>
+          </ul>
 
-        <address class="address-nav">
+          <!-- <address class="address-nav"> -->
           <ul class="address-nav list">
             <li class="item">
               <a class="address-mail link" href="mailto:info@devstudio.com">
@@ -78,7 +80,8 @@
               </a>
             </li>
           </ul>
-        </address>
+          <!-- </address> -->
+        </div>
       </nav>
     </header>
     <!-- портфолио -->
@@ -357,5 +360,7 @@
         </p>
       </div>
     </footer>
+    <!-- Ставим перед закрывающим тегом body -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
