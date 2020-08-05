@@ -984,7 +984,6 @@ p {
   .team-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
   }
 }
 
