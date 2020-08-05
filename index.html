@@ -166,12 +166,38 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="card item">
-              <img srcset="./img/Section3/mobile/НиколайКучеренко.jpg 270w, 
-              ./img/Section3/tablet/НиколайКучеренко.jpg 357w,
-              ./img/Section3/desktop/НиколайКучеренко.jpg 450w, 
-              " 
-              src="./img/Section3/mobile/НиколайКучеренко.jpg" alt="photo-team" sizes="
-              (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"/>
+              <!-- <img 
+              src="./img/Section3/desktop/НиколайКучеренко.jpg" alt="photo-team"/> -->
+              <picture>
+
+                        <source srcset="./img/Section3/desktop/webp/НиколайКучеренко.webp 270w, 
+                          ./img/Section3/desktop/webp/НиколайКучеренко2x.webp 540w" type="image/webp"
+                          media="(min-width: 1200px)" sizes="100vw">
+                        
+                        <source srcset="./img/Section3/deskto/jpg/НиколайКучеренко.jpg 270w, 
+                          ./img/Section3/desktop/jpg/НиколайКучеренко2x.jpg 540w" 
+                          media="(min-width: 1200px)"
+                          sizes="100vw">
+
+                        <source srcset="./img/Section3/tablet/webp/НиколайКучеренко.webp 354w, 
+                        ./img/Section3/tablet/webp/НиколайКучеренко2x.webp 709w" type="image/webp"
+                          media="(mix-width: 768px)" sizes="100vw">
+                        
+                        <source srcset="./img/Section3/tablet/jpg/НиколайКучеренко.jpg 354w, 
+                        ./img/Section3/tablet/jpg/НиколайКучеренко2x.jpg 708w" 
+                        media="(min-width: 768px)" sizes="100vw">
+
+                        <source srcset="./img/Section3/mobile/webp/НиколайКучеренко.webp 480w, 
+                        ./img/Section3/mobile/webp/НиколайКучеренко2x.webp 900w"   type="image/webp" 
+                        media="(max-width: 767px)" sizes="100vw">
+
+                        <source srcset="./img/Section3/mobile/jpg/НиколайКучеренко.jpg 450w, 
+                        ./img/Section3/mobile/jpg/НиколайКучеренко2x.jpg 900w" 
+                        media="(max-width: 767px)"
+                        sizes="100vw">
+
+                <img src="./img/Section3/mobile/jpg/НиколайКучеренко.jpg" alt="">
+              </picture>
 
               <!-- <div class="team"> -->
               <h3 class="section-team-title">Николай Кучеренко</h3>
@@ -209,7 +235,36 @@
               <!-- </div> -->
             </li>
             <li class="item card">
-              <img class="team-image" src="./img/Section3/desktop/ОльгаИванова.jpg" width="252" alt="" />
+              <!-- <img class="team-image" src="./img/Section3/desktop/ОльгаИванова.jpg" width="252" alt="" /> -->
+
+              <picture>
+              
+                <source srcset="./img/Section3/desktop/webp/ОльгаИванова.webp 270w, 
+                                        ./img/Section3/desktop/webp/ОльгаИванова2x.webp 540w" type="image/webp"
+                  media="(min-width: 1200px)" sizes="100vw">
+              
+                <source srcset="./img/Section3/deskto/jpg/ОльгаИванова.jpg 270w, 
+                                        ./img/Section3/desktop/jpg/ОльгаИванова2x.jpg 540w" media="(min-width: 1200px)"
+                  sizes="100vw">
+              
+                <source srcset="./img/Section3/tablet/webp/ОльгаИванова.webp 354w, 
+                                      ./img/Section3/tablet/webp/ОльгаИванова2x.webp 709w" type="image/webp"
+                  media="(mix-width: 768px)" sizes="100vw">
+              
+                <source srcset="./img/Section3/tablet/jpg/ОльгаИванова.jpg 354w, 
+                                      ./img/Section3/tablet/jpg/ОльгаИванова2x.jpg 708w" media="(min-width: 768px)"
+                  sizes="100vw">
+              
+                <source srcset="./img/Section3/mobile/webp/ОльгаИванова.webp 480w, 
+                                      ./img/Section3/mobile/webp/ОльгаИванова2x.webp 900w" type="image/webp"
+                  media="(max-width: 767px)" sizes="100vw">
+              
+                <source srcset="./img/Section3/mobile/jpg/ОльгаИванова.jpg 450w, 
+                                      ./img/Section3/mobile/jpg/ОльгаИванова2x.jpg 900w" media="(max-width: 767px)"
+                  sizes="100vw">
+              
+                <img src="./img/Section3/mobile/jpg/ОльгаИванова.jpg" alt="">
+              </picture>
               <h3 class="section-team-title">Ольга Иванова</h3>
               <p class="section-team-text">Frontend Developer</p>
               <ul class="soc-list list">
