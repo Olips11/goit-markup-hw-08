@@ -37,6 +37,18 @@
       url(../img/banner/Headertablet.jpg);
   }
 
+  @media not all,
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 481px),
+    screen and (min-resolution: 192dpi) and (min-width: 481px),
+    screen and (min-resolution: 2dppx) and (min-width: 481px) {
+    background-image: linear-gradient(
+        to right,
+        $transparent-background,
+        $transparent-background
+      ),
+      url(../img/banner/Headertablet2x.jpg);
+  }
+
   @media screen and (min-width: 769px) {
     background-image: linear-gradient(
         to right,
@@ -44,6 +56,18 @@
         $transparent-background
       ),
       url(../img/banner/Headerdesktop.jpg);
+  }
+
+  @media not all,
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px),
+    screen and (min-resolution: 192dpi) and (min-width: 769px),
+    screen and (min-resolution: 2dppx) and (min-width: 769px) {
+    background-image: linear-gradient(
+        to right,
+        $transparent-background,
+        $transparent-background
+      ),
+      url(../img/banner/Headerdesktop2x.jpg);
   }
 }
 
